@@ -8,17 +8,17 @@
 
 :root {
   color-scheme: light;
-  --ink: #142832;
-  --ink-soft: #47616d;
-  --muted: #718791;
-  --sky: #9fdcf0;
-  --sky-strong: #2388ad;
-  --sky-pale: #e6f5fa;
-  --canvas: #f4f9fb;
+  --ink: #2e302f;
+  --ink-soft: #5d625f;
+  --muted: #6f756f;
+  --sky: #e6a494;
+  --sky-strong: #a63f2d;
+  --sky-pale: #fae9e2;
+  --canvas: #fbf7f2;
   --surface: #ffffff;
-  --line: #d9e7ec;
+  --line: #e9e0d7;
   --radius: 18px;
-  --shadow: 0 28px 80px rgba(27, 91, 113, 0.14);
+  --shadow: 0 28px 80px rgba(89, 48, 34, 0.10);
 }
 
 * {
@@ -34,7 +34,7 @@ body {
   min-width: 320px;
   color: var(--ink);
   background:
-    radial-gradient(circle at 84% 4%, rgba(159, 220, 240, 0.34), transparent 26rem),
+    radial-gradient(circle at 84% 4%, rgba(230, 164, 148, 0.20), transparent 26rem),
     var(--canvas);
   font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 17px;
@@ -88,7 +88,7 @@ footer {
   gap: 11px;
   color: var(--ink);
   font-size: 1.25rem;
-  font-weight: 680;
+  font-weight: 550;
   letter-spacing: -0.025em;
   text-decoration: none;
 }
@@ -108,7 +108,7 @@ nav a,
 .footer-links a {
   color: var(--ink-soft);
   font-size: 0.95rem;
-  font-weight: 560;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ h2 {
 h3 {
   margin-bottom: 14px;
   font-size: 1.55rem;
-  font-weight: 620;
+  font-weight: 550;
 }
 
 .hero-lead {
@@ -197,7 +197,7 @@ h3 {
   border: 1px solid transparent;
   border-radius: 12px;
   font-size: 0.97rem;
-  font-weight: 650;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
   transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
@@ -213,11 +213,11 @@ h3 {
 
 .button-primary {
   color: #fff;
-  background: #196f91;
+  background: #a63f2d;
 }
 
 .button-primary:hover {
-  background: #105d79;
+  background: #853323;
 }
 
 .button-secondary {
@@ -227,7 +227,7 @@ h3 {
 }
 
 .button-secondary:hover {
-  border-color: #acd5e3;
+  border-color: #dca594;
   background: var(--surface);
 }
 
@@ -235,7 +235,7 @@ h3 {
   position: relative;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(87, 137, 155, 0.24);
+  border: 1px solid rgba(119, 84, 65, 0.20);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
@@ -255,7 +255,7 @@ h3 {
 }
 
 .visual-topline span:last-child {
-  color: #147291;
+  color: #a63f2d;
 }
 
 .product-visual img {
@@ -276,7 +276,7 @@ h3 {
 .principle > p {
   margin: 9px 0 0;
   color: var(--sky-strong);
-  font-weight: 650;
+  font-weight: 500;
 }
 
 .principle h2 {
@@ -325,12 +325,12 @@ h3 {
   color: #fff;
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.08), transparent 44%),
-    #18323e;
+    #343e3a;
 }
 
 .feature-large p {
   max-width: 31rem;
-  color: #c9dbe2;
+  color: #e1e7e3;
 }
 
 .feature-tinted {
@@ -350,7 +350,7 @@ h3 {
   margin-bottom: 128px;
   padding: 34px;
   border-radius: var(--radius);
-  background: #dff1f7;
+  background: #fae9e2;
 }
 
 .local-note h2 {
@@ -364,7 +364,7 @@ h3 {
 }
 
 .local-note > a {
-  color: #105d79;
+  color: #853323;
   font-weight: 670;
   white-space: nowrap;
 }
@@ -437,7 +437,7 @@ footer p {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 24px 70px rgba(33, 90, 109, 0.09);
+  box-shadow: 0 24px 70px rgba(89, 48, 34, 0.05);
 }
 
 .policy-summary {
@@ -616,4 +616,18 @@ footer p {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.policy-intro { max-width: 29ch; font-size: 1rem; line-height: 1.6; }
+.policy-content a:not(.button) { color: var(--sky-strong); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+.policy-content section { scroll-margin-top: 2rem; }
+@media print {
+  body { color: #000; background: #fff; font-size: 11pt; }
+  .site-header, footer, .skip-link, .policy-aside .button { display: none; }
+  .policy-shell { display: block; width: 100%; padding: 0; }
+  .policy-aside { position: static; }
+  .policy-aside h1 { max-width: none; font-size: 28pt; }
+  .policy-content { padding: 0; border: 0; box-shadow: none; }
+  .policy-summary { margin-bottom: 1.5rem; }
+  .policy-content section { break-inside: avoid; }
 }
