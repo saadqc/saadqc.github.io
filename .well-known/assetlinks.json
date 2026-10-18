@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zehna.monvif",
+      "sha256_cert_fingerprints": [
+        "8C:08:9E:34:0A:62:86:21:B6:30:0D:AC:71:68:89:73:4E:D9:6D:14:70:EA:56:5F:0B:E8:E8:02:43:01:80:72",
+        "56:2F:B6:16:D1:7E:E9:9A:F1:41:B6:DB:60:06:84:96:41:1F:08:80:6F:C4:10:31:6D:FE:1A:6E:23:4E:35:C9"
+      ]
+    }
+  }
+]

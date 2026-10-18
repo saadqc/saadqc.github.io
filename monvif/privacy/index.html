@@ -27,7 +27,7 @@
       <aside class="policy-aside">
         <p class="eyebrow">Monvif by Zehna Tech</p>
         <h1>Privacy Policy</h1>
-        <p>Effective <time datetime="2026-10-17">17 October 2026</time></p>
+        <p>Effective <time datetime="2026-10-17">18 October 2026</time></p>
         <p class="policy-intro">A clear account of what the app accesses, where information stays, and what you control.</p>
         <a class="button button-secondary" href="#contact">Privacy contact</a>
       </aside>
@@ -56,6 +56,12 @@
           <p>If you open a snapshot in another app, Monvif grants that app access to the selected image. Copies you export, share, or back up are handled by the destination app or service under its own privacy practices.</p>
         </section>
 
+        <section id="secure-sharing">
+          <h2>Secure camera sharing</h2>
+          <p>You can choose to share a camera's full setup, including addresses, profiles, usernames, and passwords, with another Monvif installation. The app encrypts this information for the recipient's public receive key and signs it with the sender's device key. Receive codes and key fingerprints are public; private sharing keys stay in operating-system secure storage and are not placed in links or the clipboard.</p>
+          <p>Encrypted links can be sent through a share sheet, copied to the clipboard, or opened as deep links. Clipboard contents are read only after you tap Paste. Your chosen messaging or browser app may retain the encrypted link and its metadata under its own privacy practices. A link opens a local preview; you must confirm before importing. Recipients need network access to the camera. A key fingerprint must be checked with the other person; a valid signature alone does not verify a person's identity.</p>
+          <p>Sharing links expire after seven days according to the recipient device's clock. This does not revoke credentials already imported or stop a recipient from retaining or sharing them. To revoke camera access, change the camera credentials or remove a dedicated camera account. Losing your device's sharing key may make old links unreadable.</p>
+        </section>
         <section id="collection">
           <h2>Collection, tracking, and sharing</h2>
           <p>Monvif does not include advertising, analytics, tracking SDKs, or automatic crash-report uploads to Zehna Tech. We do not collect camera feeds, camera passwords, snapshots, or app activity on a Zehna Tech server, and we do not sell this information.</p>
@@ -72,7 +78,7 @@
           <h2>Retention, backups, and deletion</h2>
           <p>Saved camera entries and preferences remain on your device until you remove them or clear the app’s data. You can remove cameras in the app and delete snapshots from Library. Deleting a snapshot in Monvif also attempts to remove its Android gallery copy.</p>
           <p>Deleting a gallery image alone may leave Monvif’s private copy in Library. Copies exported to other apps, shared with other people, or stored in backups must be managed separately. Deleting an image in Monvif does not remove footage stored on your camera or recorder.</p>
-          <p>Your operating system may back up, synchronize, retain, or restore app data and secure-storage items, depending on your device and account settings. Uninstalling generally removes app-private files, but gallery copies, backups, and some operating-system credential records may remain. Use your device’s storage, gallery, backup, and credential controls to manage those copies.</p>
+          <p>Android cloud backup and device-transfer backup of Monvif app data are disabled in releases that include secure sharing. On Apple platforms, private sharing keys use a non-synchronizing, device-only keychain setting. Other app data and operating-system credential records may be retained or backed up according to device and account settings. Uninstalling generally removes app-private files, but gallery copies, backups, and some operating-system credential records may remain. Use your device’s storage, gallery, backup, and credential controls to manage those copies.</p>
         </section>
 
         <section id="children">
